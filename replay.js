@@ -1,14 +1,19 @@
-// final insallah
-let body = {
-  response: "W6XAdViDU/fuLmXKAdItwKXacYetUUiln7SkQKAfudnLZoN+eDSx7xXv1EMQ+2uXy4nntfVmCUjp/hc8i6sYPaczsSSkQYJVRJ3rnumdVhrNBYqXyuwRE7bBKq49+yTFToxLTLQt1XMqLXzCN/oNYFPFUC/nYRnpJ6cF5rIKy5xZJBCx2qhQBEq4IP/ahKn+6ri6wkcN24uyGkFAgBukglj+Rumn8tuLahDrlxcPR5AjttysQFRBY00g9hHPMPCHoTXY8YAAOQAjiY1ScXbhK5h4/ZNFkQlcEOk7xsbBtytWFe2b4uESjuVx6yrwtQ5INDDaiJtgTSfv8Q3YKWvf55Ak8u38TEKrksYIf2ZWcbSiGGEWf0IeQ0M8iAkXlSu8ffP/2R5K0vecdovmXvXxwwtccfsB/Rz/nXrYnKo0wXpsH6dzzjO4I5P1TE2VVwerpIl5xM8ol3l3Bn7pw9zZKInQ01AIs+A1TqD63akLtgfzt///DPts/4YfAZUirgW4c2I0xO5txXd/y59mgx3OCxL3J4rYdntlt739OBc20b8gpuVlwUpHvDot3C2Oq2egdga4cO+fx//EqDrsMfV2JW2Ze5UUrXsI+5A2EkHMTBiDtKsqPTkmKyzfxI3jYY1TkMwI9asCUn7FsQq9GTE9t1DMehYR4CaHvwi2gJdv7iey5XpxiF8w0zMBEB5xivDNWBr+3YUZusxSWqgL3MRApOViBe5Nt2K/ew4EwfxPSjdZaBUawyAgLn8sgzeYwkNzP9fcLWg5wTxkl1NkO7eQbeY/OAymsP+XlkNVU3oa15jJOUJJAHpuITVpw3lUFsDpQQd88trTPWfU8EQoFADxMDauT660hD0Lnn9+TyAaDqB+teaVMHN5bUStDIuquhfUHrTK8XKy7fn1FvY9RorcxUDCSz8Km+PCJVhCLI+zmLYZEdWRR/TCN/Z16bZuoAdqDIunoH0DEH1j63yKIZ6nYWEn/CTmDkk1AUlf2ZmrPLZkRhAdxgt0z7OywbeqoYxI4F0bRdfrBxVFvOgT0phzGv5FaowD0Nikk0YvREMdC0j/CVKMh9bNwfba2w5DMk/e1GCHdqB5D5mT9SrbOU6i2w=="
-};
+// surge.conf içinde: 
+// [Script]
+// my_static_response = type=http-response,pattern=^https:\/\/example\.com\/path,script-path=my_static_response.js
 
-let newHeaders = {
-  "s": "uRsuHRi+zDnvvLw36BodPe1yEWEX2P/kFaqG+bJNAUB48LfLBFyHEcEKWkupcoLMdRzKZ+Byy6Bm+p/XU3nj1fAWozG+hL3IJE2rkHQ3kbrvW+8hTfSow8E24n6WZXFZY9T+zKnKvZOvOhUNG8aoP1v9mCEh4qUEG1gHdz7AY24="
+// 🔽 Bu dosya: my_static_response.js
+
+let body = {
+  response: "qvR36Lh5bLwIotp4PDQH7R/jRT2doCinJPONpIamytb8rSUDT9/8WFmrF/CZgoT/Qdv+IpFvuYwwLHhzwpV94Lp8dxqSEP1Bc13qG54O6oWdNK5kO48TrHGYKp7k/Du7XWW8+yBCrNwWSH22XDVCMRV7g2LrSdLpTMSbDkXuhzFaIFeeyaKjTEtaIuRhnboBZplV6r2TZXTw2nlzfa+U+P+NhW0vyzak0KfWWwNqbKUs0tK9eKPqUsrbQZlWVrKv3U9Dv5P0xqqMSSvIiBhXL5WH41KMVhV3HwUQe3SFnFHw4BIxdNkuuX9t9FJaNd5VP7QdXxB+O15sdZfuKBIKw7QX42yRzfaztGkNjJz6uCJ8Go0I5zvQ8I5pVzkIcy0J70SEqPFlo2QVH4lqB2Eyzpk7ITmoihoUJjpJ2gXMq7Dodfi2LFlu+ZnQPCWctRC1pOQmCc3TGm2ooP7eU0y+/ESlPBNjzX+4fRo9PeYTrEeonR+RlBbOBjCuMi6nQaqCPusUmEpRurPzI3EMxLxxnpqZugNSms6Rr3NlR9CYH7m66FFY3aq8EYhqHydU1vpigjfKjtVIFVorBQZb1XWHRTwT6zkl7AmvuKAHkohtr/PDM0FJj0t3yP/GFsqJO0vqOsR4v355rG3x8ZNmYhBliYgn4p+SMn0WQz76kNecUzzv1NT2MLIiZaj21KjUjQg4TkXS/dCw7qDzE6idvfJgHtnl5g6/k6xEpRZ80MDMy5rSrxrLf7cUrK2aPObvU82PdWAhXrBTddwMUaYqRJJT2sKNWq31aQWrKM3uesU2FhtaKYQW2lSzH6nuWjO9lZdnPI0cO1yPnDVlixxj5K1IqtSWNWmX50/4F2CxaDISO1zNBIKfHN49b5VZ08/GygYXb+kuzvB67og1r0sAkCBae9OLHLdz3alve0VyAVVKyb20kx9/PbHWjLxOmse/tzA02I+dQ3YIqpAkXw9ZArVpBg=="
 };
 
 $done({
-  status: 200,
-  headers: newHeaders,
+  status: "HTTP/1.1 200 OK",
+  headers: {
+    "Content-Type": "application/json; charset=utf-8",
+    "Access-Control-Allow-Origin": "*",
+    "S": "VThoEi6ncojLMtkRQQ5jaEJS4+8M3dqLJ33p68gJtoZoU0FFMlFe2oXxQlbIX2VFPvV6+SFvAD2n/xdNDXyhHAZkhkz2lkFZaOqfnfnb4vf06Z9ZM0WrAcd1hRkuHMWLo9W2yizXyZNEguOriN9ASFSHcA+DpO6oKw5jEz6EnhU="
+  },
   body: JSON.stringify(body)
 });
